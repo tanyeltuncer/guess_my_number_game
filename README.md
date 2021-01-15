@@ -1,1 +1,4 @@
-# guess_my_number_game
+# Guess my number game
+
+![grafik](https://user-images.githubusercontent.com/58187568/104724178-9c76a500-5730-11eb-8cf8-db1cef8f3b48.png)
+![grafik](https://user-images.githubusercontent.com/58187568/104724241-b44e2900-5730-11eb-9d54-d1ed8dd7f80a.png)
