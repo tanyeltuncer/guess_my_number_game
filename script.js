@@ -13,7 +13,13 @@ document.querySelector(".check").addEventListener("click", function () {
   if (document.querySelector(".score").textContent > 0 && guess <= 20 && guess > 0) {
      if (guess === randomNo) {
       displayMsg("You Win!🎉");
-      document.querySelector(".highscore").textContent = document.querySelector(".score").textContent;
+
+      if (document.querySelector(".highscore").textContent <= document.querySelector(".score").textContent) {
+        document.querySelector(".highscore").textContent = document.querySelector(".score").textContent;
+      } else {
+        document.querySelector(".highscore").textContent = document.querySelector(".highscore").textContent;
+      }
+
       document.querySelector(".number").textContent = randomNo;
       //Change background color to green
       document.querySelector('body').style.backgroundColor = '#60b347';
@@ -34,6 +40,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
 //Reset the Game to initial setting to restart it
 document.querySelector(".again").addEventListener("click", function () {
+  randomNo = Math.trunc(Math.random() * 20) + 1;
 
   //const randomNo = Math.floor(Math.random() * 10 + 1);
   document.querySelector(".number").textContent = "?";
