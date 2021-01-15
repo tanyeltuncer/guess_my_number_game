@@ -34,6 +34,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
 //Reset the Game to initial setting to restart it
 document.querySelector(".again").addEventListener("click", function () {
+
   //const randomNo = Math.floor(Math.random() * 10 + 1);
   document.querySelector(".number").textContent = "?";
   document.querySelector(".score").textContent = 20;
@@ -42,4 +43,5 @@ document.querySelector(".again").addEventListener("click", function () {
   //Change to old css version after win / click on the button
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
+
 });
